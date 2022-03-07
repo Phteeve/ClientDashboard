@@ -1,0 +1,167 @@
+:root {
+	--primary-color: white;
+	--secondary-color: black;
+	--tertiary-color: #ccc;
+	--highlight-color: #33e;
+	--warning-color: #f22;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: #222;
+		--secondary-color: #ddd;
+		--tertiary-color: black;
+		--highlight-color: #aaf;
+		--warning-color: #f55;
+	}
+}
+
+.danger {
+	background-color: var(--warning-color);
+}
+
+.linklist {
+	font-weight: bold;
+	list-style-type: "\2192\0020";
+}
+
+.linklist li {
+	margin: 0.25em 0;
+	transition: transform 0.3s;
+}
+
+.linklist li:hover {
+	transform: translateX(1%);
+}
+
+.spaced {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	color: var(--highlight-color);
+}
+
+body {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 0.5em;
+}
+
+fieldset {
+	border-radius: 8px;
+}
+
+form {
+	margin: 1em;
+}
+
+footer {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 1em;
+	text-align: center;
+}
+
+footer a {
+	color: var(--primary-color);
+}
+
+header {
+	align-items: center;
+	background: var(--primary-color);
+	box-shadow: 0 10px 25px 0 var(--tertiary-color);
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 2em 0;
+	padding: 0 1em;
+	position: sticky;
+	top: 0;
+}
+
+header a {
+	color: var(--secondary-color);
+}
+
+input {
+	border: 1px solid var(--tertiary-color);
+	border-radius: 8px;
+	margin: 0.5em 0;
+	padding: 0.3em;
+}
+
+nav * {
+	margin: 0.3em;
+}
+
+main {
+	margin: 1em auto;
+	max-width: 80ch;
+	min-height: 100vh;
+	padding: 1em;
+}
+
+section {
+	margin: 1em;
+}
+
+select {
+	margin: 0.5em 0;
+}
+
+table {
+	background-color: var(--tertiary-color);
+	border-radius: 8px;
+	border-spacing: 0;
+	margin: 2em 0;
+	width: 100%;
+}
+
+td {
+	border: 1px solid var(--secondary-color);
+	padding: 0.5em;
+}
+
+tr.head {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+tr:first-child td:first-child {
+	border-top-left-radius: 8px;
+}
+
+tr:first-child td:last-child {
+	border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+	border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+	border-bottom-right-radius: 8px;
+}
+
+thead {
+	font-weight: bold;
+}
+
+textarea {
+	border: 1px solid var(--tertiary-color);
+	border-radius: 8px;
+	padding: 0.3em;
+}
